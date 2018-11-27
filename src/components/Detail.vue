@@ -6,7 +6,7 @@
         <p>{{synth.year}}</p><p>{{synth.polyphony}}</p>
         <p><a v-bind:href="synth.href" target="_blank">Read More</a></p>
     </div>
-    <div class="synth-heading" v-else></div>
+    <div class="synth-heading" v-else>(Please select a synth)</div>
     </section>
 </template>
 
@@ -25,7 +25,10 @@ section {
     margin-right: 50px;
 }
 div.synth-heading {
+    margin-top: 15%;
     font-size: 20px;
+    font-style: italic;
+    color: red;
 }
 div img.selected-img {
     width: 100%;
