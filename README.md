@@ -1,29 +1,9 @@
-# list-of-vue
+# list-of-vue app
 
-## Project setup
-```
-npm install
-```
+## by Cari Palazzolo @caripizza
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Description
+A single page Vue.js app displaying a clickable list of vintage synthesizers.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Technologies Used
+Vue CLI, JavaScript, HTML, CSS
