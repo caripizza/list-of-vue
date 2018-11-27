@@ -26,12 +26,13 @@ section {
     width: 40%;
     float: right;
     margin-right: 50px;
+    margin-top: 10px;
 }
 div.synth-heading {
     margin-top: 15%;
     font-size: 20px;
     font-style: italic;
-    color: red;
+    color: purple;
 }
 div img.selected-img {
     width: 100%;
