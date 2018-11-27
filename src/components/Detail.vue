@@ -2,10 +2,10 @@
     <section>
     <div v-if="synth">
         <h2>{{synth.name}}</h2>
-        <p>{{synth.year}}</p>
+        <p>{{synth.year}}</p><p>{{synth.polyphony}}</p>
         <img v-bind:src="synth.image">
     </div>
-    <div v-else>Please select a synth</div>
+    <div class="synth-heading" v-else></div>
     </section>
 </template>
 
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style>
-
+div.synth-heading {
+    font-size: 20px;
+}
 </style>

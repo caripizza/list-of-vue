@@ -2,9 +2,8 @@
     <ul>
         <li v-for="synth in synths"
             v-bind:key="synth.name"
-            v-on:click="handleSelect"
-            >
-            <h3>{{synth.name}} made in {{synth.year}}</h3>
+            v-on:click="onSelect(synth)">
+            <h3>{{synth.name}}</h3>
             <img v-bind:src="synth.image">
         </li>
     </ul>
@@ -13,12 +12,8 @@
 <script>
 export default {
     props: {
-        synths: Array
-    },
-    methods: {
-        handleSelect() {
-            console.log('selected');
-        }
+        synths: Array,
+        onSelect: Function
     }
 };
 </script>
@@ -32,13 +27,11 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 2px solid purple;
     cursor: pointer;
 }
 li img {
-    width: 25%;
-    height: 25%;
+    width: 10%;
+    height: 10%;
     margin: 0 auto;
 }
-
 </style>
