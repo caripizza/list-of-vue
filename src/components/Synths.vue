@@ -1,5 +1,6 @@
 <template>
     <ul>
+        <pre>{{ synths }}</pre>
         <li>
             <h3>Synth Name</h3>
             <img src="http://www.vintagesynth.com/sites/default/files/2017-05/ms20.jpg">
@@ -9,7 +10,9 @@
 
 <script>
 export default {
-
+    props: {
+        synths: Array
+    }
 };
 </script>
 
