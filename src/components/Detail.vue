@@ -19,10 +19,21 @@ export default {
 </script>
 
 <style>
+section {
+    width: 40%;
+    float: right;
+    margin-right: 50px;
+}
 div.synth-heading {
     font-size: 20px;
 }
 div img.selected-img {
-    width: 50%;
+    width: 100%;
+}
+@media screen and (max-width: 680px) {
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 </style>

@@ -22,22 +22,31 @@ export default {
 ul {
     list-style: none;
     padding-left: 0px;
+    width: 50%;
+    float: left;
 }
 li {
+    margin: 10px auto;
     display: flex;
     flex-direction: row;
     cursor: pointer;
 }
 li:hover {
     opacity: .5;
+    outline: 2px solid purple;
 }
 li h3 {
     justify-content: space-evenly;
 }
 li img {
-    width: 10%;
-    height: 10%;
-    padding: 1em 2em 1em 0.5em;
+    width: 15%;
+    height: 15%;
+    padding: 1em 2em 1em 0em;
     margin-left: 5em;
+}
+@media screen and (max-width: 680px) {
+    ul {
+        width: 100%;
+    }
 }
 </style>

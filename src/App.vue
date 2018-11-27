@@ -1,11 +1,11 @@
 <template>
   <div id="app">
+    <h1>Vue list app</h1> 
     <Synths
       v-bind:synths="synths"
       v-bind:onSelect="handleSelect"/>
     <Detail
-      v-bind:synth="selected"
-    />
+      v-bind:synth="selected"/>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     methods: {
         handleSelect(synth) {
             this.selected = synth;
-            console.log('you selected synth', synth.name);
+            console.log('you selected the', synth.name);
         }
     }
 };
@@ -40,5 +40,6 @@ export default {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   color: purple;
+  margin: 0 auto;
 }
 </style>
