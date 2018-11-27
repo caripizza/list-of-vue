@@ -3,8 +3,8 @@
         <li v-for="synth in synths"
             v-bind:key="synth.name"
             v-on:click="onSelect(synth)">
-            <h3>{{synth.name}}</h3>
             <img v-bind:src="synth.image">
+            <h3>{{synth.name}}</h3>
         </li>
     </ul>
 </template>
@@ -25,13 +25,19 @@ ul {
 }
 li {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
     cursor: pointer;
+}
+li:hover {
+    opacity: .5;
+}
+li h3 {
+    justify-content: space-evenly;
 }
 li img {
     width: 10%;
     height: 10%;
-    margin: 0 auto;
+    padding: 1em 2em 1em 0.5em;
+    margin-left: 5em;
 }
 </style>

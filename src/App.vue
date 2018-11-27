@@ -29,7 +29,7 @@ export default {
     methods: {
         handleSelect(synth) {
             this.selected = synth;
-            console.log('user selected synth', synth.name);
+            console.log('you selected synth', synth.name);
         }
     }
 };
