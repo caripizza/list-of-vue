@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         handleSelect(synth) {
-            this.selected = synth;
+            this.selected = synth === this.selected ? null : synth;
             console.log('you selected the', synth.name);
         }
     }
