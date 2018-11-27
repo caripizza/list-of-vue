@@ -3,10 +3,13 @@
     <div v-if="synth">
         <img v-bind:src="synth.image" class="selected-img">
         <h2>{{synth.name}}</h2>
-        <p>{{synth.year}}</p><p>{{synth.polyphony}}</p>
+        <p>{{synth.year}}</p>
+        <p>{{synth.polyphony}}</p>
         <p><a v-bind:href="synth.href" target="_blank">Read More</a></p>
     </div>
-    <div class="synth-heading" v-else>(Please select a synth)</div>
+    <div class="synth-heading" v-else>
+        <p>(Please select a synth)</p>
+    </div>
     </section>
 </template>
 
