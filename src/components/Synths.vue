@@ -2,9 +2,9 @@
     <ul>
         <li v-for="synth in synths"
             v-bind:key="synth.name"
-            @click="onSelect(synth)"
+            v-on:click="handleSelect"
             >
-            <h3>{{synth.name}}</h3>
+            <h3>{{synth.name}} made in {{synth.year}}</h3>
             <img v-bind:src="synth.image">
         </li>
     </ul>
@@ -14,6 +14,11 @@
 export default {
     props: {
         synths: Array
+    },
+    methods: {
+        handleSelect() {
+            console.log('selected');
+        }
     }
 };
 </script>
